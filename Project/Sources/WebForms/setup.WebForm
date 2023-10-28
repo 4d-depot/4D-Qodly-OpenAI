@@ -1,0 +1,636 @@
+{
+	"metadata": {
+		"v": "1.0",
+		"datasources": [
+			{
+				"id": "settings",
+				"type": "entitysel",
+				"dataclass": "dataGenerator",
+				"namespace": "",
+				"initialValue": "all",
+				"depth": null,
+				"pageSize": 100
+			},
+			{
+				"id": "setting",
+				"type": "entity",
+				"dataclass": "dataGenerator",
+				"from": "settings",
+				"namespace": "",
+				"initialValue": "first",
+				"depth": null,
+				"events": [
+					{
+						"type": "simple-action",
+						"id": "2GtQm45QRa7XtDiF3ZCdUu",
+						"events": [
+							"onChange"
+						],
+						"action": "copy",
+						"datasource": {
+							"name": "setting.settingValueHid",
+							"type": "string",
+							"namespace": "",
+							"from": "",
+							"target": "value",
+							"targetNamespace": "",
+							"targetType": "string"
+						}
+					}
+				]
+			},
+			{
+				"id": "value",
+				"type": "scalar",
+				"namespace": "",
+				"dataType": "string",
+				"initialValue": ""
+			}
+		],
+		"styles": []
+	},
+	"components": {
+		"ROOT": {
+			"type": {
+				"resolvedName": "Container"
+			},
+			"isCanvas": true,
+			"props": {
+				"classNames": [],
+				"events": [
+					{
+						"type": "method",
+						"dataclass": "dataGenerator",
+						"events": [
+							"onload"
+						],
+						"id": "oAAy5N4X2jHPLA6d9CSAeg",
+						"method": "ds.dataGenerator.addEmptyAPIKey",
+						"params": [],
+						"datasource": "",
+						"returns": {
+							"name": "$0",
+							"type": "Variable"
+						}
+					},
+					{
+						"type": "simple-action",
+						"id": "iy5atwvSGpsLmGbGmEctQk",
+						"events": [
+							"onload"
+						],
+						"action": "refresh",
+						"datasource": {
+							"name": "settings",
+							"from": "",
+							"type": "entitysel",
+							"namespace": ""
+						}
+					}
+				],
+				"className": "bg-white h-full w-full px-6",
+				"airyMode": false,
+				"style": {
+					"fontSize": "12px",
+					"display": "flex",
+					"flexDirection": "column",
+					"justifyContent": "flex-start",
+					"alignItems": "center"
+				}
+			},
+			"displayName": "Webform",
+			"custom": {},
+			"parent": "",
+			"hidden": false,
+			"nodes": [
+				"EWQex7MvD3",
+				"Z3n9D2o_V5"
+			],
+			"linkedNodes": {}
+		},
+		"T8Iabh55GD": {
+			"type": {
+				"resolvedName": "DataTable"
+			},
+			"isCanvas": false,
+			"props": {
+				"iterable": true,
+				"classNames": [
+					"dataTableStyle"
+				],
+				"events": [],
+				"style": {},
+				"headerHeight": 36,
+				"rowHeight": 30,
+				"datasource": "settings",
+				"currentElement": "setting",
+				"columns": [
+					{
+						"title": "Setting key",
+						"source": "settingKey",
+						"width": 150,
+						"sorting": false,
+						"format": "",
+						"dataType": "string",
+						"id": "34gV1Z6vmX4xA2UwVPcqQk"
+					},
+					{
+						"title": "Setting value",
+						"source": "settingValueHid",
+						"width": 150,
+						"sorting": false,
+						"format": "",
+						"dataType": "string",
+						"id": "tyUymK8AkcLaMKxwMqfzmr"
+					}
+				]
+			},
+			"displayName": "DataTable",
+			"custom": {},
+			"parent": "oLdHGd11fJ",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"lNK7BzBX8_": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"display": "flex",
+					"flexDirection": "row",
+					"paddingTop": "2px",
+					"paddingRight": "2px",
+					"paddingBottom": "2px",
+					"paddingLeft": "2px",
+					"height": "fit-content",
+					"width": "fit-content",
+					"justifyContent": "center"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "EWQex7MvD3",
+			"hidden": false,
+			"nodes": [
+				"oLdHGd11fJ",
+				"Zw6hjDjftW"
+			],
+			"linkedNodes": {}
+		},
+		"oLdHGd11fJ": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"width": "fit-content",
+					"height": "fit-content"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "lNK7BzBX8_",
+			"hidden": false,
+			"nodes": [
+				"T8Iabh55GD"
+			],
+			"linkedNodes": {}
+		},
+		"17f4wlAp-J": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"display": "flex",
+					"flexDirection": "column",
+					"gap": "20px",
+					"width": "300px",
+					"height": "fit-content"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "Zw6hjDjftW",
+			"hidden": false,
+			"nodes": [
+				"2rXvLyAbMh",
+				"muVYB7r1MB"
+			],
+			"linkedNodes": {}
+		},
+		"2rXvLyAbMh": {
+			"type": {
+				"resolvedName": "TextInput"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"placeholder": "placeholder",
+				"label": "label",
+				"labelPosition": "top"
+			},
+			"displayName": "Text Input",
+			"custom": {},
+			"parent": "17f4wlAp-J",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"label": "2gXkWaHyGh",
+				"input": "niG4HR0rT1"
+			}
+		},
+		"2gXkWaHyGh": {
+			"type": {
+				"resolvedName": "Label"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"moveable": false,
+				"text": "Setting key",
+				"deletable": true
+			},
+			"displayName": "Label",
+			"custom": {},
+			"parent": "2rXvLyAbMh",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"niG4HR0rT1": {
+			"type": {
+				"resolvedName": "Input"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"deletable": false,
+				"className": "fd-input w-full bg-transparent",
+				"type": "text",
+				"datasource": "setting.settingKey",
+				"readOnly": true,
+				"moveable": false,
+				"placeholder": "",
+				"readonly": false
+			},
+			"displayName": "Input",
+			"custom": {},
+			"parent": "2rXvLyAbMh",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"muVYB7r1MB": {
+			"type": {
+				"resolvedName": "TextInput"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"placeholder": "placeholder",
+				"label": "label",
+				"labelPosition": "top"
+			},
+			"displayName": "Text Input",
+			"custom": {},
+			"parent": "17f4wlAp-J",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"label": "u23AKN1sXG",
+				"input": "p9sfkZlvi4"
+			}
+		},
+		"u23AKN1sXG": {
+			"type": {
+				"resolvedName": "Label"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"moveable": false,
+				"text": "Setting value",
+				"deletable": true
+			},
+			"displayName": "Label",
+			"custom": {},
+			"parent": "muVYB7r1MB",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"p9sfkZlvi4": {
+			"type": {
+				"resolvedName": "Input"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"deletable": false,
+				"className": "fd-input w-full bg-transparent",
+				"type": "password",
+				"datasource": "value",
+				"dataType": "string",
+				"moveable": false,
+				"placeholder": "",
+				"readonly": false
+			},
+			"displayName": "Input",
+			"custom": {},
+			"parent": "muVYB7r1MB",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"Zw6hjDjftW": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"display": "flex",
+					"flexDirection": "column",
+					"justifyContent": "space-between",
+					"paddingRight": "5px",
+					"paddingBottom": "5px",
+					"paddingTop": "5px",
+					"paddingLeft": "5px",
+					"width": "fit-content"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "lNK7BzBX8_",
+			"hidden": false,
+			"nodes": [
+				"17f4wlAp-J",
+				"fzazaaUQop"
+			],
+			"linkedNodes": {}
+		},
+		"fzazaaUQop": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"display": "flex",
+					"flexDirection": "row",
+					"justifyContent": "center"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "Zw6hjDjftW",
+			"hidden": false,
+			"nodes": [
+				"kBzvifMHNG"
+			],
+			"linkedNodes": {}
+		},
+		"kBzvifMHNG": {
+			"type": {
+				"resolvedName": "Button"
+			},
+			"isCanvas": false,
+			"props": {
+				"text": "Save",
+				"classNames": [
+					"buttons"
+				],
+				"events": [
+					{
+						"type": "method",
+						"dataclass": "dataGeneratorEntity",
+						"events": [
+							"onclick"
+						],
+						"id": "ueesXiPPx7yTADcCXz63hn",
+						"method": "setting.saveWithValue",
+						"params": [
+							{
+								"name": "value",
+								"type": "string",
+								"datasource": "value",
+								"id": "78dyAjiPgBJR9reh3SMtBw"
+							}
+						],
+						"namespace": "",
+						"datasource": "",
+						"returns": {
+							"name": "$0",
+							"type": "Variable"
+						},
+						"feedback": true
+					},
+					{
+						"type": "simple-action",
+						"id": "rkSXFY1GCiQYp7otujfU4x",
+						"events": [
+							"onclick"
+						],
+						"action": "refresh",
+						"datasource": {
+							"name": "settings",
+							"from": "",
+							"type": "entitysel",
+							"namespace": ""
+						}
+					}
+				],
+				"iconPosition": "left",
+				"style": {}
+			},
+			"displayName": "Button",
+			"custom": {},
+			"parent": "fzazaaUQop",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"icon": "-dTuZgj67Y"
+			}
+		},
+		"-dTuZgj67Y": {
+			"type": {
+				"resolvedName": "Icon"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [
+					"buttons__icon"
+				],
+				"events": [],
+				"icon": "fa-save",
+				"style": {}
+			},
+			"displayName": "Icon",
+			"custom": {},
+			"parent": "kBzvifMHNG",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"EWQex7MvD3": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"display": "flex",
+					"justifyContent": "flex-end",
+					"width": "fit-content"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "ROOT",
+			"hidden": false,
+			"nodes": [
+				"lNK7BzBX8_",
+				"4iKl3rUECX"
+			],
+			"linkedNodes": {}
+		},
+		"4iKl3rUECX": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"width": "fit-content"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "EWQex7MvD3",
+			"hidden": false,
+			"nodes": [
+				"7m3N58WsjI"
+			],
+			"linkedNodes": {}
+		},
+		"7m3N58WsjI": {
+			"type": {
+				"resolvedName": "Button"
+			},
+			"isCanvas": false,
+			"props": {
+				"text": "Close settings",
+				"classNames": [
+					"buttons"
+				],
+				"events": [
+					{
+						"type": "navigation",
+						"id": "2QQRmqGCHk94jTq1z1LkJF",
+						"events": [
+							"onclick"
+						],
+						"externalLink": false,
+						"loader": "",
+						"parent": "webform-loader-self",
+						"target": "generateData"
+					}
+				],
+				"iconPosition": "left",
+				"style": {
+					"width": "115px"
+				}
+			},
+			"displayName": "Button",
+			"custom": {},
+			"parent": "4iKl3rUECX",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"icon": "J6vEtYRs2-"
+			}
+		},
+		"J6vEtYRs2-": {
+			"type": {
+				"resolvedName": "Icon"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [
+					"buttons__icon"
+				],
+				"events": [],
+				"icon": "fa-close",
+				"style": {}
+			},
+			"displayName": "Icon",
+			"custom": {},
+			"parent": "7m3N58WsjI",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"Z3n9D2o_V5": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "Don't have an openAI API key yet? ",
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false
+							},
+							{
+								"type": "link",
+								"url": "https://platform.openai.com/account/api-keys",
+								"target": "_self",
+								"datasource": "https://platform.openai.com/account/api-keys",
+								"isDatasource": false,
+								"children": [
+									{
+										"bold": false,
+										"italic": false,
+										"underlined": false,
+										"strikethrough": false,
+										"text": "get it here"
+									}
+								]
+							},
+							{
+								"text": ""
+							}
+						]
+					}
+				],
+				"datasource": "https://platform.openai.com/account/api-keys"
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "ROOT",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		}
+	}
+}

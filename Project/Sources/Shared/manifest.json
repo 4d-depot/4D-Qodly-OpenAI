@@ -1,0 +1,42 @@
+{
+  "applicationName": "Qodly and OpenAI",
+  "description": "Generate test datasets for any dataclass with OpenAI!",
+  "details": "This demo proposes you to generate test data for any dataclass using the OpenAI API",
+  "visuals": [
+    {
+      "description": "App overview",
+      "image": "/$shared/visuals/screenshot-1.png"
+    },
+    {
+      "description": "Attributes settings",
+      "image": "/$shared/visuals/screenshot-2.png"
+    },
+    {
+      "description": "Preview your prompt results",
+      "image": "/$shared/visuals/screenshot-3.png"
+    },
+    {
+      "description": "Be creative with prompts",
+      "image": "/$shared/visuals/screenshot-4.png"
+    },
+    {
+      "description": "Don't forget your API Key",
+      "image": "/$shared/visuals/screenshot-5.png"
+    },
+	  {
+      "description": "Have fun generating data!",
+      "image": "/$shared/visuals/screenshot-6.png"
+    }
+  ],
+  "logo": {
+    "small": "logo_small_path",
+    "large": "/$shared/logos/Q-2.svg"
+  },
+  "qodlyVersion": "all",
+  "author": {
+    "name": "Qodly",
+    "url": "https://www.qodly.com/"
+  },
+  "category": "AI",
+  "language": "English"
+}

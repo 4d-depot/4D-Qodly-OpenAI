@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><preferences stamp="4">
+	<com.4d>
+		<web>
+			<standalone_server>
+				<qodlystudio enabled="true"/>
+				<rest launch_at_startup="true"/>
+				<configuration allow_ssl="false" publish_at_startup="true"/>
+			</standalone_server>
+		</web>
+	</com.4d>
+</preferences>

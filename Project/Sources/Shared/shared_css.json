@@ -1,0 +1,16 @@
+{
+	"classes": [
+		{
+			"name": "dataTableStyle",
+			"content": "self {\n  border-radius: 8px;\n  box-shadow: 0 0 40px 0 rgb(0 0 0 / 15%);\n\tborder-width: 1px;\n}\n\nself .header .header-cell {\n  background-color: transparent;\n}\n\nself .header-cell {\n  background-color: transparent;\n\tcolor: #fff;\n  font-weight: bold;\n  padding: 0rem 0.5rem;\n}\n\nself .header {\n  background-image: linear-gradient(to right, #cc75ca , #6a36ca);\n}\n\nself .row {\n  align-items: center;\n}\n\nself .row .cell {\n  padding: 0rem 0.5rem;\n}\n\nself .row .cell > span {\n  justify-content: flex-start;\n}\n\nself .row.selected {\n  background-color: #d2d7f5;\n}\n\nself .row-even:not(.selected):not(:hover) {\n  background-color: #f8f6ff;\n}\n\nself .header .resizable > :not([hidden]) ~ :not([hidden]),\nself .row > :not([hidden]) ~ :not([hidden]),\nself .Grid .innerScrollContainer,\nself .Grid .innerScrollContainer > :not([hidden]) ~ :not([hidden]) {\n  border-width: 0;\n}",
+			"parentId": null,
+			"id": "ljwXKC23osbNshr8NBExn"
+		},
+		{
+			"name": "buttons",
+			"content": "self {\n\tcursor: pointer;\n  background-image: linear-gradient(to right, #cc75ca , #6a36ca);\n\twidth: 108px;\n}\nself:hover {\n\topacity: 0.8;\n}\nself:active {\n\topacity: 1;\n}",
+			"parentId": null,
+			"id": "d0y1LXYp26vuEjnlKnnI8"
+		}
+	]
+}
