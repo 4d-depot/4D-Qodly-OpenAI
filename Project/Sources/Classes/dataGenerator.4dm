@@ -182,14 +182,12 @@ exposed Function generateData($dataclassName : Text; $recordQty : Integer; $attr
 	If ($attributesToGenerate.length>0)
 		$iterator:=0
 		For ($iterator; 1; $recordQty)
-			If ($failedFetch)
-				continue
-			End if 
 			$entity:=ds[$dataclassName].new()
 			For each ($entry; $attributesToGenerate)
 				Case of 
 					: (($entry.value.whatToDo="empty") || ($entry.value.whatToDo="nothing"))
 						continue
+						
 					: ($entry.value.kind="relatedEntity")
 						$entity[$entry.value.name]:=$entry.value.selection[Random%$entry.value.length]
 						
@@ -215,7 +213,7 @@ exposed Function generateData($dataclassName : Text; $recordQty : Integer; $attr
 						$nextValue:=$entry.value.aiGenerator.getNextValue()
 						If ($entry.value.aiGenerator.fetchStatusCode#200)
 							$failedFetch:=True
-							continue
+							break
 						End if 
 						Case of 
 							: ($entry.value.type="number")

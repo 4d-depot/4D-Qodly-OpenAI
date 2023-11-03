@@ -13,7 +13,7 @@
 		<table_extra>
 			<editor_table_info displayable_fields_count="5">
 				<color red="255" green="255" blue="255" alpha="0"/>
-				<coordinates left="314.125" top="9.94921875" width="222.0078125" height="163.33984375"/>
+				<coordinates left="20.73828125" top="29.3984375" width="222.0078125" height="163.33984375"/>
 			</editor_table_info>
 		</table_extra>
 	</table>
@@ -27,8 +27,8 @@
 		<primary_key field_name="ID" field_uuid="26D459C115684D00915F5284F5BD8F6F"/>
 		<table_extra>
 			<editor_table_info displayable_fields_count="6">
-				<color red="255" green="255" blue="255" alpha="0"/>
-				<coordinates left="205.79296875" top="269.1796875" width="120" height="167.33203125"/>
+				<color red="1" green="25" blue="147" alpha="255"/>
+				<coordinates left="110.58463541667" top="275.76041666667" width="120" height="167.33203125"/>
 			</editor_table_info>
 		</table_extra>
 	</table>
@@ -37,9 +37,9 @@
 		<field name="label" uuid="C457E6921D574A6A84AB8A33AF3170E5" type="10" limiting_length="255" id="2"/>
 		<primary_key field_name="ID" field_uuid="7FB88DD31CCF4FB09E1E2FEA8E078AE0"/>
 		<table_extra>
-			<editor_table_info displayable_fields_count="6">
-				<color red="255" green="255" blue="255" alpha="0"/>
-				<coordinates left="2.34765625" top="380.27734375" width="120" height="167.33203125"/>
+			<editor_table_info displayable_fields_count="3">
+				<color red="1" green="25" blue="147" alpha="255"/>
+				<coordinates left="297.37239583333" top="209.43619791667" width="120" height="111.4296875"/>
 			</editor_table_info>
 		</table_extra>
 	</table>
@@ -54,51 +54,9 @@
 		<field name="manager" uuid="50B7FC5D491E43D6BDE31F63FCE3FD1B" type="1" id="8"/>
 		<primary_key field_name="ID" field_uuid="AC7CEEF0037E4C628395F967F7E2DB84"/>
 		<table_extra>
-			<editor_table_info displayable_fields_count="14">
-				<color red="255" green="255" blue="255" alpha="0"/>
-				<coordinates left="414.15234375" top="404.9453125" width="276.65234375" height="353.05078125"/>
-			</editor_table_info>
-		</table_extra>
-	</table>
-	<table name="invoice" uuid="A9240EA809DB4E8586C6C8F84D3A0F47" id="5">
-		<field name="ID" uuid="9A3D62DE77E245EC9F343959DB48EA4B" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
-		<field name="invoiceNumber" uuid="95E97DBFD0C64A5B85CABEB376F796DD" type="10" limiting_length="255" id="2"/>
-		<field name="invoiceAmount" uuid="EE653C73195D4549A93DCD431358F0E0" type="3" id="3"/>
-		<field name="date" uuid="50B3558CBE8845D9938140E8ECF7965E" type="8" id="4"/>
-		<field name="clientID" uuid="9ADC7344C4A3490B878E34F848F9B032" type="4" id="5"/>
-		<primary_key field_name="ID" field_uuid="9A3D62DE77E245EC9F343959DB48EA4B"/>
-		<table_extra>
-			<editor_table_info displayable_fields_count="10">
-				<color red="255" green="255" blue="255" alpha="0"/>
-				<coordinates left="791.44140625" top="475.6640625" width="213.8046875" height="259.796875"/>
-			</editor_table_info>
-		</table_extra>
-	</table>
-	<table name="product" uuid="0FF5E7185B2B420CB0FE7F4D41ECDE1A" id="6">
-		<field name="ID" uuid="A6CBC6AA856D4DC18501768D83E4498A" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
-		<field name="name" uuid="4AE57EA68AF84E849556E9C8D5B6F62C" type="10" limiting_length="255" id="2"/>
-		<field name="reference" uuid="CFF56258EB754205B54284E43191C070" type="10" limiting_length="255" id="3">
-			<field_extra multi_line="false"/>
-		</field>
-		<field name="price" uuid="DCBEB1A49DFE4DFBB60792387A4B0F0D" type="3" id="4"/>
-		<primary_key field_name="ID" field_uuid="A6CBC6AA856D4DC18501768D83E4498A"/>
-		<table_extra>
-			<editor_table_info displayable_fields_count="6">
-				<color red="255" green="255" blue="255" alpha="0"/>
-				<coordinates left="1333.5234375" top="474.15234375" width="120" height="167.33203125"/>
-			</editor_table_info>
-		</table_extra>
-	</table>
-	<table name="invoiceLine" uuid="4EBD041148FC4301864F18D9FE0E0AA0" id="7">
-		<field name="ID" uuid="B3386AA488D748F48586BFAF8758565A" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
-		<field name="productID" uuid="B2F594F9013040ED8C63DB968AF270B1" type="4" id="2"/>
-		<field name="invoiceID" uuid="AA1BF497DCAB4F7C8EC725950EB32D36" type="4" id="3"/>
-		<field name="productAmount" uuid="831F6B87DEA74B0CB915DC734501C3AF" type="3" id="4"/>
-		<primary_key field_name="ID" field_uuid="B3386AA488D748F48586BFAF8758565A"/>
-		<table_extra>
-			<editor_table_info displayable_fields_count="6">
-				<color red="255" green="255" blue="255" alpha="0"/>
-				<coordinates left="1113.953125" top="452.82421875" width="120" height="167.33203125"/>
+			<editor_table_info displayable_fields_count="9">
+				<color red="1" green="25" blue="147" alpha="255"/>
+				<coordinates left="288.46354166667" top="344.54557291667" width="173.44921875" height="239.14453125"/>
 			</editor_table_info>
 		</table_extra>
 	</table>
@@ -136,57 +94,6 @@
 			</editor_relation_info>
 		</relation_extra>
 	</relation>
-	<relation uuid="2DB5CECF22414925AF9E7A7D46175E1D" name_Nto1="client" name_1toN="invoices" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1">
-		<related_field kind="source">
-			<field_ref uuid="9ADC7344C4A3490B878E34F848F9B032" name="clientID">
-				<table_ref uuid="A9240EA809DB4E8586C6C8F84D3A0F47" name="invoice"/>
-			</field_ref>
-		</related_field>
-		<related_field kind="destination">
-			<field_ref uuid="AC7CEEF0037E4C628395F967F7E2DB84" name="ID">
-				<table_ref uuid="D9FD23C96C764EE29AAF196A552C0CEC" name="person"/>
-			</field_ref>
-		</related_field>
-		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
-			<editor_relation_info via_point_x="-1" via_point_y="-1" prefers_left="false" smartlink="true">
-				<color red="30" green="30" blue="30" alpha="0"/>
-			</editor_relation_info>
-		</relation_extra>
-	</relation>
-	<relation uuid="7EF93C13ED994ADAB447B810586D5B81" name_Nto1="product" name_1toN="invoiceLines" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1">
-		<related_field kind="source">
-			<field_ref uuid="B2F594F9013040ED8C63DB968AF270B1" name="productID">
-				<table_ref uuid="4EBD041148FC4301864F18D9FE0E0AA0" name="invoiceLine"/>
-			</field_ref>
-		</related_field>
-		<related_field kind="destination">
-			<field_ref uuid="A6CBC6AA856D4DC18501768D83E4498A" name="ID">
-				<table_ref uuid="0FF5E7185B2B420CB0FE7F4D41ECDE1A" name="product"/>
-			</field_ref>
-		</related_field>
-		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
-			<editor_relation_info via_point_x="-1" via_point_y="-1" prefers_left="false" smartlink="true">
-				<color red="30" green="30" blue="30" alpha="0"/>
-			</editor_relation_info>
-		</relation_extra>
-	</relation>
-	<relation uuid="AB35822633504EB08F28EA9501F0D64C" name_Nto1="invoice" name_1toN="invoiceLines" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1">
-		<related_field kind="source">
-			<field_ref uuid="AA1BF497DCAB4F7C8EC725950EB32D36" name="invoiceID">
-				<table_ref uuid="4EBD041148FC4301864F18D9FE0E0AA0" name="invoiceLine"/>
-			</field_ref>
-		</related_field>
-		<related_field kind="destination">
-			<field_ref uuid="9A3D62DE77E245EC9F343959DB48EA4B" name="ID">
-				<table_ref uuid="A9240EA809DB4E8586C6C8F84D3A0F47" name="invoice"/>
-			</field_ref>
-		</related_field>
-		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
-			<editor_relation_info via_point_x="-1" via_point_y="-1" prefers_left="false" smartlink="true">
-				<color red="30" green="30" blue="30" alpha="0"/>
-			</editor_relation_info>
-		</relation_extra>
-	</relation>
 	<index kind="regular" unique_keys="true" uuid="0E8338E3CF98443CA72C5A7277E050AE" type="7">
 		<field_ref uuid="26D459C115684D00915F5284F5BD8F6F" name="ID">
 			<table_ref uuid="6AEB7348F7C4480CBC473FB267054861" name="task"/>
@@ -202,11 +109,6 @@
 			<table_ref uuid="AA7C600465A44BC9B4C6C086DC6B9444" name="dataGenerator"/>
 		</field_ref>
 	</index>
-	<index kind="regular" unique_keys="true" uuid="783A1F750EC747AFB5B3299EFE9CDF65" type="7">
-		<field_ref uuid="9A3D62DE77E245EC9F343959DB48EA4B" name="ID">
-			<table_ref uuid="A9240EA809DB4E8586C6C8F84D3A0F47" name="invoice"/>
-		</field_ref>
-	</index>
 	<index kind="regular" unique_keys="true" uuid="BD51867C2532442BA31AD9871AFC7A3E" type="7">
 		<field_ref uuid="920F9AC87A4E4556B9BD34C37BBA2162" name="ID">
 			<table_ref uuid="AA7C600465A44BC9B4C6C086DC6B9444" name="dataGenerator"/>
@@ -215,16 +117,6 @@
 	<index kind="regular" unique_keys="true" uuid="CCBF372175FE4D2896CDCB29F04733F1" type="1">
 		<field_ref uuid="5C2795B1275D437390389D012D605895" name="settingKey">
 			<table_ref uuid="AA7C600465A44BC9B4C6C086DC6B9444" name="dataGenerator"/>
-		</field_ref>
-	</index>
-	<index kind="regular" unique_keys="true" uuid="D049ECE2F1DF41CBA161CA52D5CF7140" type="7">
-		<field_ref uuid="B3386AA488D748F48586BFAF8758565A" name="ID">
-			<table_ref uuid="4EBD041148FC4301864F18D9FE0E0AA0" name="invoiceLine"/>
-		</field_ref>
-	</index>
-	<index kind="regular" unique_keys="true" uuid="E92D1706328D42FF808F941CA0B4F02E" type="7">
-		<field_ref uuid="A6CBC6AA856D4DC18501768D83E4498A" name="ID">
-			<table_ref uuid="0FF5E7185B2B420CB0FE7F4D41ECDE1A" name="product"/>
 		</field_ref>
 	</index>
 	<index kind="regular" unique_keys="true" uuid="F44F31D4490E4159B7747A9672E5627A" type="7">

@@ -18,14 +18,15 @@ Class constructor($apiKey : Text; $attributeName : Text; $attributeType : Text; 
 	
 	This.messages:=[]
 	This.messages.push({role: "system"; content: This.systemPrompt})
-	This.messages.push({role: "user"; content: "Generate a list of exactly 10 values for firstname of type Text."})
+	This.messages.push({role: "user"; content: "Generate a list of exactly 10 values for \"firstname\" of type Text."})
 	This.messages.push({role: "assistant"; content: "¶¶Alice¶Oliver¶Elsa¶Liam¶Maja¶Noah¶Ella¶Lucas¶Wilma¶Hugo¶¶"})
-	This.messages.push({role: "user"; content: "Generate a list of exactly 10 values for amount of type integer."})
+	This.messages.push({role: "user"; content: "Generate a list of exactly 10 values for \"amount\" of type number."})
 	This.messages.push({role: "assistant"; content: "¶¶35¶64797¶101246¶3¶119¶4477¶647779¶357769¶94¶77¶¶"})
-	This.messages.push({role: "user"; content: "Generate a list of exactly 5 values for birthdate of type date."})
+	This.messages.push({role: "user"; content: "Generate a list of exactly 5 values for \"birthdate\" of type date."})
 	This.messages.push({role: "assistant"; content: "¶¶1980-10-05¶2035-05-02¶1995-12-15¶2022-10-14¶2011-05-23¶¶"})
 	
-	This.userPrompt:="Generate a list of exactly "+String($quantity)+" values for "+String($attributeName)+" of type "+This.attributeType+". Remark: "+$remark
+	This.userPrompt:="Generate a list of exactly "+String($quantity)+" values for \""+String($attributeName)+"\" of type "+This.attributeType+"."
+	This.userPrompt+=($remark#"") ? (" Remark: "+$remark) : ""
 	If ($attributeType="date")
 		This.userPrompt+=". Date format: YYYY-MM-DD"
 	End if 
@@ -41,7 +42,6 @@ Function getNextValue() : Text
 	
 	Case of 
 		: (This.fetchStatusCode#200)
-			//throw(1; "Could not fetch OpenAI response; check your API key")
 			return ""
 			
 		: (This.valueList.length=0)

@@ -459,7 +459,8 @@
 				"7g_l8szibP",
 				"9EZge4_Ecd",
 				"A4rsY-BKXe",
-				"16h_H5isT8"
+				"16h_H5isT8",
+				"UgBIVigPOv"
 			],
 			"linkedNodes": {}
 		},
@@ -2153,6 +2154,24 @@
 			"displayName": "Icon",
 			"custom": {},
 			"parent": "TNtL1kYe0-",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"UgBIVigPOv": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"display": "flex"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "sd-hWNFLaM",
 			"hidden": false,
 			"nodes": [],
 			"linkedNodes": {}
