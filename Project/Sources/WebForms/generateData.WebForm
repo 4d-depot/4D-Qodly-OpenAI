@@ -191,8 +191,7 @@
 				"name": "innerPanelStyle",
 				"content": "self {\n  padding-right : 3px;\n  padding-bottom : 3px;\n  padding-top : 3px;\n  padding-left : 3px;\n  border-radius : 8px;\n  border-width : 1px;\n\tmax-width: 380px;\n}",
 				"parentId": null,
-				"children": {},
-				"scope": "local"
+				"children": {}
 			},
 			{
 				"name": "rotatedText",
@@ -200,14 +199,12 @@
 				"children": {},
 				"parentId": null,
 				"origin": "Gg9jNZUopO",
-				"id": "bSDCVJB_io0WYZ3IK33Ln",
-				"scope": "local"
+				"id": "bSDCVJB_io0WYZ3IK33Ln"
 			},
 			{
 				"id": "8sM0ifLBsceLAd_YhK3SF",
 				"name": "buttons__icon",
 				"content": "self {\n  \n}",
-				"scope": "local",
 				"parentId": "K-HPwFMCpWymK__IFFbNj"
 			},
 			{
@@ -215,7 +212,6 @@
 				"content": "self {\n  display : flex;\n  align-items : start;\n  gap : 8px;\n  flex-direction : row;\n  justify-content : flex-start;\n  border-radius : 8px;\n  background-color : #efefefff;\n  padding-right : 5px;\n  padding-bottom : 5px;\n  padding-top : 5px;\n  padding-left : 5px;\n\tbox-shadow: 0 0 40px 0 rgb(0 0 0 / 15%);\n\tborder-width: 1px;\n\tborder-color: #d7d7d7ff;\n\tcolor: grey;\n}",
 				"children": {},
 				"parentId": null,
-				"scope": "local",
 				"origin": "R879FYe2gh",
 				"id": "PN5Evl4qeqQ8JvmGdfoSg"
 			},
@@ -224,7 +220,6 @@
 				"content": "self {\n  height : 36px;\n  max-height : 36px;\n\tbackground-image: linear-gradient(to right, #cc75ca , #6a36ca);\n  color : #ffffffff;\n  border-top-left-radius : 8px;\n  border-top-right-radius : 8px;\n  padding-right : 0.5rem;\n  padding-bottom : 0.5rem;\n  padding-top : 0.5rem;\n  padding-left : 0.5rem;\n}",
 				"children": {},
 				"parentId": null,
-				"scope": "local",
 				"origin": "57r8ZFQx4v",
 				"id": "j-XnzoJQJu0Vdc9kaMemZ"
 			}
@@ -1817,6 +1812,7 @@
 			"nodes": [
 				"VZfsqtnntp",
 				"Q82m4FfqBd",
+				"9m3sUiBM9K",
 				"lU7r5x5bwI"
 			],
 			"linkedNodes": {}
@@ -2049,12 +2045,12 @@
 			"props": {
 				"events": [],
 				"style": {
-					"height": "264px",
+					"height": "204px",
 					"paddingTop": "5px",
 					"paddingLeft": "9px",
 					"paddingRight": "9px",
 					"paddingBottom": "0px",
-					"minHeight": "264px"
+					"minHeight": "204px"
 				}
 			},
 			"displayName": "Stylebox",
@@ -2172,6 +2168,53 @@
 			"displayName": "Stylebox",
 			"custom": {},
 			"parent": "sd-hWNFLaM",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"9m3sUiBM9K": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": []
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "BTrZg_OUnz",
+			"hidden": false,
+			"nodes": [
+				"TjiEbHXLP3"
+			],
+			"linkedNodes": {}
+		},
+		"TjiEbHXLP3": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "Be patient. Data can take several minutes before being generated.",
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false
+							}
+						]
+					}
+				],
+				"datasource": ""
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "9m3sUiBM9K",
 			"hidden": false,
 			"nodes": [],
 			"linkedNodes": {}

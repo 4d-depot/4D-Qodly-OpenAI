@@ -91,7 +91,9 @@ exposed Function listDatatableAttributes($name : Text) : Collection
 				$entry.value.whatToDo:="nothing"
 			: (This.isRelationField($entry.value.name; $name))
 				$entry.value.whatToDo:="nothing"
-			: (($entry.value.type="bool") || ($entry.value.kind="relatedEntity"))
+			: ($entry.value.kind="relatedEntity")
+				$entry.value.whatToDo:="get entity"
+			: ($entry.value.type="bool")
 				$entry.value.whatToDo:="random"
 			Else 
 				$entry.value.whatToDo:="openAI"
@@ -157,7 +159,7 @@ exposed Function getAttributesToGenerate($dataclassName : Text; $attributeList :
 			$entry.value.aiGenerator:=cs.openAIgetdata.new(This.getSetting("OpenAI_APIKey"); $entry.value.name; $entry.value.type; Num($entry.value.AIrequestset); $entry.value.AIremark)
 		End if 
 		
-		If ($entry.value.kind="relatedEntity")
+		If ($entry.value.whatToDo="get entity")
 			$entry.value.selection:=ds[$entry.value.relatedDataClass].all()
 			$entry.value.length:=$entry.value.selection.length
 		End if 
@@ -188,27 +190,23 @@ exposed Function generateData($dataclassName : Text; $recordQty : Integer; $attr
 					: (($entry.value.whatToDo="empty") || ($entry.value.whatToDo="nothing"))
 						continue
 						
-					: ($entry.value.kind="relatedEntity")
+					: (($entry.value.whatToDo="get entity") && ($entry.value.length>0))
 						$entity[$entry.value.name]:=$entry.value.selection[Random%$entry.value.length]
 						
-					: ($entry.value.whatToDo="random")
+					: (($entry.value.whatToDo="random") && ($entry.value.kind="storage"))
 						Case of 
-							: ($entry.value.kind="storage")
-								Case of 
-									: ($entry.value.type="string")
-										$entity[$entry.value.name]:=This.gRandomString()
-									: (entry.value.type="number")
-										$entity[$entry.value.name]:=This.gRandomInteger()
-									: ($entry.value.type="bool")
-										$entity[$entry.value.name]:=This.gRandomBool()
-									: ($entry.value.type="date")
-										$entity[$entry.value.name]:=This.gRandomDate()
-									Else 
-										continue
-								End case 
+							: ($entry.value.type="string")
+								$entity[$entry.value.name]:=This.gRandomString()
+							: (entry.value.type="number")
+								$entity[$entry.value.name]:=This.gRandomInteger()
+							: ($entry.value.type="bool")
+								$entity[$entry.value.name]:=This.gRandomBool()
+							: ($entry.value.type="date")
+								$entity[$entry.value.name]:=This.gRandomDate()
 							Else 
 								continue
 						End case 
+						
 					: ($entry.value.whatToDo="openAI")
 						$nextValue:=$entry.value.aiGenerator.getNextValue()
 						If ($entry.value.aiGenerator.fetchStatusCode#200)

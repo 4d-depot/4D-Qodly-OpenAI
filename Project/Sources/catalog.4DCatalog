@@ -19,16 +19,24 @@
 	</table>
 	<table name="task" uuid="6AEB7348F7C4480CBC473FB267054861" id="2">
 		<field name="ID" uuid="26D459C115684D00915F5284F5BD8F6F" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
-		<field name="timeSpent" uuid="5D05FB596D9343DF89E789B0C196FEA2" type="3" id="2"/>
+		<field name="timeSpent" uuid="5D05FB596D9343DF89E789B0C196FEA2" type="6" id="2"/>
 		<field name="ID_activity" uuid="A70548AC260F4FADA515C1E4C8D8EA91" type="4" id="3"/>
 		<field name="ID_person" uuid="68473FD92E12459094A8D145958AAE94" type="4" id="4"/>
 		<field name="comment" uuid="338C549362574AA6AF147C4B7C7D400F" type="10" limiting_length="255" id="5"/>
 		<field name="date" uuid="AE1C76D8945B444098E9F5AADC5D155B" type="8" id="6"/>
 		<primary_key field_name="ID" field_uuid="26D459C115684D00915F5284F5BD8F6F"/>
 		<table_extra>
+			<comment format="rtf"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf2709
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;\red254\green255\blue255;}
+{\*\expandedcolortbl;;\cssrgb\c99608\c100000\c100000;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\partightenfactor0
+
+\f0\fs22 \cf2 \ulnone Tasks are created by persons and associated to an activity}]]></comment>
+			<comment format="text">Tasks are created by persons and associated to an activity</comment>
 			<editor_table_info displayable_fields_count="6">
 				<color red="1" green="25" blue="147" alpha="255"/>
-				<coordinates left="110.58463541667" top="275.76041666667" width="120" height="167.33203125"/>
+				<coordinates left="152.25651041667" top="240.38151041667" width="120" height="167.33203125"/>
 			</editor_table_info>
 		</table_extra>
 	</table>
@@ -39,7 +47,7 @@
 		<table_extra>
 			<editor_table_info displayable_fields_count="3">
 				<color red="1" green="25" blue="147" alpha="255"/>
-				<coordinates left="297.37239583333" top="209.43619791667" width="120" height="111.4296875"/>
+				<coordinates left="362.37630208333" top="168.44401041667" width="166.45703125" height="120.01171875"/>
 			</editor_table_info>
 		</table_extra>
 	</table>
@@ -48,7 +56,7 @@
 		<field name="firstname" uuid="6E9E56E8E07E450AB50F51AD89C920A4" type="10" limiting_length="255" id="2"/>
 		<field name="lastname" uuid="FC9ACF4F23454CC890A2F093E0D6592F" type="10" limiting_length="255" id="3"/>
 		<field name="birthdate" uuid="0EF8E8EDEEEE47F8A2E275A6420B42FF" type="8" id="4"/>
-		<field name="income" uuid="724AEF60E7A347C892AEEC3C4BF792FD" type="3" id="5"/>
+		<field name="income" uuid="724AEF60E7A347C892AEEC3C4BF792FD" type="4" id="5"/>
 		<field name="countryOfBirth" uuid="E796B90D879C49368C0FE7CF58D3C7BA" type="10" limiting_length="255" id="6"/>
 		<field name="fullAddress" uuid="462360E0A07A4B619938C53DF3AA2392" type="10" limiting_length="255" id="7"/>
 		<field name="manager" uuid="50B7FC5D491E43D6BDE31F63FCE3FD1B" type="1" id="8"/>
@@ -56,7 +64,7 @@
 		<table_extra>
 			<editor_table_info displayable_fields_count="9">
 				<color red="1" green="25" blue="147" alpha="255"/>
-				<coordinates left="288.46354166667" top="344.54557291667" width="173.44921875" height="239.14453125"/>
+				<coordinates left="361.43229166667" top="300.50651041667" width="173.44921875" height="239.14453125"/>
 			</editor_table_info>
 		</table_extra>
 	</table>

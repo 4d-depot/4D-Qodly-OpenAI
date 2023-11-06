@@ -604,7 +604,7 @@
 							{
 								"type": "link",
 								"url": "https://platform.openai.com/account/api-keys",
-								"target": "_self",
+								"target": "_blank",
 								"datasource": "https://platform.openai.com/account/api-keys",
 								"isDatasource": false,
 								"children": [
