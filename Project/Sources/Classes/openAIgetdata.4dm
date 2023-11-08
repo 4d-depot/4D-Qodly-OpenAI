@@ -13,8 +13,8 @@ Class constructor($apiKey : Text; $attributeName : Text; $attributeType : Text; 
 	This.systemPrompt:="You are data generator. "
 	This.systemPrompt+="You will be provided with a description values to generate; and your task is to generate as many values as requested. "
 	This.systemPrompt+="Generated values must be separated by the character separator ¶. "
-	This.systemPrompt+="The file must start with 2 characters: ¶¶. "
-	This.systemPrompt+="The file must end with 2 characters: ¶¶. "
+	This.systemPrompt+="The list must start with 2 characters: ¶¶. "
+	This.systemPrompt+="The list must end with 2 characters: ¶¶. "
 	
 	This.messages:=[]
 	This.messages.push({role: "system"; content: This.systemPrompt})
