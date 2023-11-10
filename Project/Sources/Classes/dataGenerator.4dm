@@ -131,7 +131,7 @@ exposed Function previewAIdata($attribute : Object) : Text
 	For ($iterator; 1; 5)
 		$retString+=$aiGenerator.getNextValue()+"\n"
 		If ($aiGenerator.fetchStatusCode#200)
-			return "Could not fetch OpenAI response, check your API key"
+			return "Could not fetch OpenAI response. OpenAI error: "+$aiGenerator.fetchErrorMessage
 		End if 
 	End for 
 	$retString+="openAI query duration: "+String($aiGenerator.lastFetchDuration)+" ms"
@@ -176,10 +176,11 @@ exposed Function generateData($dataclassName : Text; $recordQty : Integer; $attr
 	var $entry : Object
 	var $iterator : Integer
 	var $entity : 4D.Entity
-	var $nextValue : Text
+	var $nextValue; $fetchError : Text
 	var $failedFetch : Boolean
 	
 	$failedFetch:=False
+	$fetchError:=""
 	$attributesToGenerate:=This.getAttributesToGenerate($dataclassName; $attributeList)
 	If ($attributesToGenerate.length>0)
 		$iterator:=0
@@ -211,6 +212,7 @@ exposed Function generateData($dataclassName : Text; $recordQty : Integer; $attr
 						$nextValue:=$entry.value.aiGenerator.getNextValue()
 						If ($entry.value.aiGenerator.fetchStatusCode#200)
 							$failedFetch:=True
+							$fetchError:=$entry.value.aiGenerator.fetchErrorMessage
 							break
 						End if 
 						Case of 
@@ -225,7 +227,13 @@ exposed Function generateData($dataclassName : Text; $recordQty : Integer; $attr
 						continue
 				End case 
 			End for each 
-			$entity.save()
+			If ($failedFetch)
+				break
+			Else 
+				$entity.save()
+			End if 
+			
+			
 		End for 
 	End if 
 	If ($failedFetch)

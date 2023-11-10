@@ -1,4 +1,4 @@
-property apiKey; attributeName; attributeType; remark; systemPrompt; userPrompt : Text
+property apiKey; attributeName; attributeType; remark; systemPrompt; userPrompt; fetchErrorMessage : Text
 property quantity; failedAttempts; maxFailedAttempts; lastFetchDuration; fetchStatusCode : Integer
 property valueList; messages : Collection
 
@@ -34,6 +34,7 @@ Class constructor($apiKey : Text; $attributeName : Text; $attributeType : Text; 
 	This.failedAttempts:=0
 	This.maxFailedAttempts:=5
 	This.fetchStatusCode:=200
+	This.fetchErrorMessage:=""
 	
 Function getNextValue() : Text
 	If (This.valueList.length=0)
@@ -108,6 +109,7 @@ Function queryOpenAI() : Text
 	If (This.fetchStatusCode=200)
 		return $request.response.body.choices[0].message.content
 	Else 
+		This.fetchErrorMessage:=$request.response.body.error.message
 		return ""
 	End if 
 	
