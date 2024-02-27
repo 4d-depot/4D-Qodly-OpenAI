@@ -1,7 +1,11 @@
 # 4D-Qodly-OpenAI
 Proof of concept of generating testing data with OpenAI.
 This project consists in an app made with Qodly Studio. The app purpose is to generate data for dataclasses (tables) defined in the project structure.
- 
+
+## Demonstration video
+Check out this video and learn how to use the app.
+
+[![Youtube link](https://img.youtube.com/vi/zVsKD3OaqUI/0.jpg)](https://www.youtube.com/watch?v=zVsKD3OaqUI)
 
 ## Pre-requisites
 * Follow these steps activate Qodly Studio with 4D v20 R2 minimum: https://developer.4d.com/docs/WebServer/qodly-studio
