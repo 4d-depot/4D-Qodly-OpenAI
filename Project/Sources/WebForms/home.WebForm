@@ -576,12 +576,8 @@
 				"gridProps": {
 					"styleboxWidth": 176,
 					"styleboxHeight": 204,
-					"enableMosaic": true,
-					"enableFlex": false,
-					"flexProps": {
-						"nbOfRows": 3,
-						"nbOfColumns": 2
-					}
+					"styleboxPercentWidth": "",
+					"enableMosaic": true
 				},
 				"currentElement": "selectedVisual"
 			},

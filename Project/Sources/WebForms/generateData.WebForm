@@ -281,9 +281,7 @@
 					"dataTableStyle"
 				],
 				"events": [],
-				"style": {
-					"width": "100%"
-				},
+				"style": {},
 				"headerHeight": 36,
 				"rowHeight": 30,
 				"datasource": "datatables",
@@ -1880,7 +1878,6 @@
 					"paddingBottom": "0px",
 					"paddingTop": "0px",
 					"paddingLeft": "0px",
-					"width": "fit-content",
 					"textAlign": "start",
 					"display": "flex",
 					"flexDirection": "column",
