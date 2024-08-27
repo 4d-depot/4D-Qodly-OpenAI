@@ -108,9 +108,9 @@ exposed Function updateAttributes($attributeList : Collection; $updatedEntry : O
 	
 	For each ($entry; $attributeList)
 		If ($entry.key=$updatedEntry.key)
-			$entry.value.AIremark:=updatedEntry.value.AIremark
-			$entry.value.AIrequestset:=updatedEntry.value.AIrequestset
-			$entry.value.whatToDo:=updatedEntry.value.whatToDo
+			$entry.value.AIremark:=$updatedEntry.value.AIremark
+			$entry.value.AIrequestset:=$updatedEntry.value.AIrequestset
+			$entry.value.whatToDo:=$updatedEntry.value.whatToDo
 		End if 
 	End for each 
 	

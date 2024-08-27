@@ -3,7 +3,6 @@ property quantity; failedAttempts; maxFailedAttempts; lastFetchDuration; fetchSt
 property valueList; messages : Collection
 
 Class constructor($apiKey : Text; $attributeName : Text; $attributeType : Text; $quantity : Integer; $remark : Text)
-	
 	This.apiKey:=$apiKey
 	This.attributeName:=$attributeName
 	This.attributeType:=$attributeType
@@ -81,7 +80,6 @@ Function getNewValues()
 			End if 
 		End if 
 	End if 
-	
 	
 Function queryOpenAI() : Text
 	var $url : Text

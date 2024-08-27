@@ -442,7 +442,8 @@
 					"paddingLeft": "5px",
 					"flexWrap": "wrap",
 					"alignContent": "center"
-				}
+				},
+				"iterableChild": true
 			},
 			"displayName": "Stylebox",
 			"custom": {},
@@ -474,7 +475,8 @@
 					"flexDirection": "row",
 					"flexWrap": "wrap",
 					"justifyContent": "center"
-				}
+				},
+				"iterableChild": true
 			},
 			"displayName": "Stylebox",
 			"custom": {},
@@ -496,7 +498,8 @@
 				"style": {
 					"justifyContent": "space-between",
 					"width": "100%"
-				}
+				},
+				"iterableChild": true
 			},
 			"displayName": "Text Input",
 			"custom": {},
@@ -576,7 +579,8 @@
 					"paddingBottom": "5px",
 					"paddingTop": "5px",
 					"paddingLeft": "5px"
-				}
+				},
+				"iterableChild": true
 			},
 			"displayName": "Stylebox",
 			"custom": {},
@@ -686,7 +690,8 @@
 					"paddingBottom": "5px",
 					"paddingTop": "5px",
 					"paddingLeft": "5px"
-				}
+				},
+				"iterableChild": true
 			},
 			"displayName": "Stylebox",
 			"custom": {},
@@ -722,7 +727,8 @@
 				"style": {},
 				"classNames": [
 					"rotatedText"
-				]
+				],
+				"iterableChild": true
 			},
 			"displayName": "Text",
 			"custom": {},
@@ -748,7 +754,8 @@
 					"paddingLeft": "5px",
 					"height": "100%",
 					"alignItems": "stretch"
-				}
+				},
+				"iterableChild": true
 			},
 			"displayName": "Stylebox",
 			"custom": {},
@@ -785,7 +792,8 @@
 				"style": {},
 				"classNames": [
 					"rotatedText"
-				]
+				],
+				"iterableChild": true
 			},
 			"displayName": "Text",
 			"custom": {},
@@ -807,7 +815,8 @@
 					"paddingBottom": "5px",
 					"paddingTop": "5px",
 					"paddingLeft": "5px"
-				}
+				},
+				"iterableChild": true
 			},
 			"displayName": "Stylebox",
 			"custom": {},
@@ -926,7 +935,8 @@
 					"display": "flex",
 					"alignItems": "center",
 					"flexWrap": "nowrap"
-				}
+				},
+				"iterableChild": true
 			},
 			"displayName": "Text",
 			"custom": {},
@@ -1038,7 +1048,8 @@
 					"paddingLeft": "5px",
 					"width": "fit-content",
 					"textAlign": "start"
-				}
+				},
+				"iterableChild": true
 			},
 			"displayName": "Stylebox",
 			"custom": {},
@@ -1064,7 +1075,8 @@
 					"paddingTop": "5px",
 					"paddingLeft": "5px",
 					"height": "100%"
-				}
+				},
+				"iterableChild": true
 			},
 			"displayName": "Stylebox",
 			"custom": {},
@@ -1101,7 +1113,8 @@
 				"style": {},
 				"classNames": [
 					"rotatedText"
-				]
+				],
+				"iterableChild": true
 			},
 			"displayName": "Text",
 			"custom": {},
@@ -1130,7 +1143,8 @@
 				},
 				"classNames": [
 					"innerPanelStyle"
-				]
+				],
+				"iterableChild": true
 			},
 			"displayName": "Stylebox",
 			"custom": {},
@@ -1162,7 +1176,8 @@
 					"alignItems": "center",
 					"height": "334px"
 				},
-				"serverSideRef": "updateSection"
+				"serverSideRef": "updateSection",
+				"iterableChild": true
 			},
 			"displayName": "Stylebox",
 			"custom": {},
@@ -1260,7 +1275,8 @@
 				"style": {
 					"width": "100%",
 					"gap": "3px"
-				}
+				},
+				"iterableChild": true
 			},
 			"displayName": "Text Input",
 			"custom": {},
@@ -1332,7 +1348,8 @@
 				"style": {
 					"width": "100%",
 					"justifyContent": "space-between"
-				}
+				},
+				"iterableChild": true
 			},
 			"displayName": "Text Input",
 			"custom": {},
@@ -1479,7 +1496,8 @@
 				},
 				"classNames": [
 					"previewPanel"
-				]
+				],
+				"iterableChild": true
 			},
 			"displayName": "Stylebox",
 			"custom": {},
@@ -1521,7 +1539,8 @@
 				],
 				"style": {
 					"height": "108px"
-				}
+				},
+				"iterableChild": true
 			},
 			"displayName": "Text",
 			"custom": {},
@@ -1542,21 +1561,32 @@
 				],
 				"events": [
 					{
-						"type": "simple-action",
-						"id": "ii8qH3gVFmiZfWg6bDt4Sb",
+						"type": "method",
+						"dataclass": "dataGenerator",
 						"events": [
 							"onclick"
 						],
-						"action": "copy",
-						"datasource": {
-							"name": "attributes",
-							"from": "",
-							"type": "scalar",
-							"namespace": "",
-							"dataType": "array",
-							"target": "attributes",
-							"targetNamespace": "",
-							"targetType": "array"
+						"id": "w4z82tGkMC1Kc95NGydPZu",
+						"method": "ds.dataGenerator.updateAttributes",
+						"params": [
+							{
+								"name": "attributeList",
+								"type": "Collection",
+								"datasource": "attributes",
+								"id": "p3SseNLSMsSSUeDwfroDB9"
+							},
+							{
+								"name": "updatedEntry",
+								"type": "Object",
+								"datasource": "selectedAttribute",
+								"id": "2Yie5Re8tr9GWcJA9Ah2cD"
+							}
+						],
+						"datasource": "",
+						"returns": {
+							"name": "result",
+							"type": "Collection",
+							"datasource": "attributes"
 						}
 					}
 				],
@@ -1654,7 +1684,8 @@
 				"style": {},
 				"classNames": [
 					"panelHeader"
-				]
+				],
+				"iterableChild": true
 			},
 			"displayName": "Text",
 			"custom": {},
@@ -1683,7 +1714,8 @@
 					"gap": "5px",
 					"textAlign": "start"
 				},
-				"serverSideRef": "aiPanel"
+				"serverSideRef": "aiPanel",
+				"iterableChild": true
 			},
 			"displayName": "Stylebox",
 			"custom": {},
@@ -1710,7 +1742,8 @@
 					"paddingTop": "5px",
 					"paddingLeft": "5px",
 					"width": "fit-content"
-				}
+				},
+				"iterableChild": true
 			},
 			"displayName": "Stylebox",
 			"custom": {},
@@ -1736,7 +1769,8 @@
 					"paddingTop": "5px",
 					"paddingLeft": "5px",
 					"height": "100%"
-				}
+				},
+				"iterableChild": true
 			},
 			"displayName": "Stylebox",
 			"custom": {},
@@ -1773,7 +1807,8 @@
 				"style": {},
 				"classNames": [
 					"rotatedText"
-				]
+				],
+				"iterableChild": true
 			},
 			"displayName": "Text",
 			"custom": {},
@@ -1801,7 +1836,8 @@
 				},
 				"classNames": [
 					"innerPanelStyle"
-				]
+				],
+				"iterableChild": true
 			},
 			"displayName": "Stylebox",
 			"custom": {},
@@ -1857,7 +1893,8 @@
 				"style": {},
 				"classNames": [
 					"panelHeader"
-				]
+				],
+				"iterableChild": true
 			},
 			"displayName": "Text",
 			"custom": {},
@@ -1883,7 +1920,8 @@
 					"flexDirection": "column",
 					"justifyContent": "center",
 					"alignItems": "center"
-				}
+				},
+				"iterableChild": true
 			},
 			"displayName": "Stylebox",
 			"custom": {},
@@ -1908,7 +1946,8 @@
 					"paddingTop": "0px",
 					"paddingLeft": "0px",
 					"width": "fit-content"
-				}
+				},
+				"iterableChild": true
 			},
 			"displayName": "Stylebox",
 			"custom": {},
@@ -1937,7 +1976,8 @@
 					"flexDirection": "column",
 					"alignItems": "center",
 					"height": "70px"
-				}
+				},
+				"iterableChild": true
 			},
 			"displayName": "Stylebox",
 			"custom": {},
@@ -1962,7 +2002,8 @@
 					"paddingBottom": "0px",
 					"paddingTop": "0px",
 					"paddingLeft": "0px"
-				}
+				},
+				"iterableChild": true
 			},
 			"displayName": "Stylebox",
 			"custom": {},
@@ -1992,7 +2033,8 @@
 					"justifyContent": "flex-start",
 					"alignItems": "start",
 					"gap": "9px"
-				}
+				},
+				"iterableChild": true
 			},
 			"displayName": "Stylebox",
 			"custom": {},
@@ -2021,7 +2063,8 @@
 					"flexDirection": "column",
 					"justifyContent": "space-between"
 				},
-				"serverSideRef": "aiPanel"
+				"serverSideRef": "aiPanel",
+				"iterableChild": true
 			},
 			"displayName": "Stylebox",
 			"custom": {},
@@ -2048,7 +2091,8 @@
 					"paddingRight": "9px",
 					"paddingBottom": "0px",
 					"minHeight": "204px"
-				}
+				},
+				"iterableChild": true
 			},
 			"displayName": "Stylebox",
 			"custom": {},
@@ -2076,7 +2120,8 @@
 					"flexDirection": "column",
 					"justifyContent": "center",
 					"alignItems": "center"
-				}
+				},
+				"iterableChild": true
 			},
 			"displayName": "Stylebox",
 			"custom": {},
@@ -2160,7 +2205,8 @@
 				"events": [],
 				"style": {
 					"display": "flex"
-				}
+				},
+				"iterableChild": true
 			},
 			"displayName": "Stylebox",
 			"custom": {},
@@ -2175,7 +2221,8 @@
 			},
 			"isCanvas": true,
 			"props": {
-				"events": []
+				"events": [],
+				"iterableChild": true
 			},
 			"displayName": "Stylebox",
 			"custom": {},
@@ -2207,7 +2254,8 @@
 						]
 					}
 				],
-				"datasource": ""
+				"datasource": "",
+				"iterableChild": true
 			},
 			"displayName": "Text",
 			"custom": {},

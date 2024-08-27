@@ -35,7 +35,7 @@
 \f0\fs22 \cf2 \ulnone Tasks are created by persons and associated to an activity}]]></comment>
 			<comment format="text">Tasks are created by persons and associated to an activity</comment>
 			<editor_table_info displayable_fields_count="6">
-				<color red="1" green="25" blue="147" alpha="255"/>
+				<color red="249" green="130" blue="127" alpha="255"/>
 				<coordinates left="152.25651041667" top="240.38151041667" width="120" height="167.33203125"/>
 			</editor_table_info>
 		</table_extra>
@@ -46,7 +46,7 @@
 		<primary_key field_name="ID" field_uuid="7FB88DD31CCF4FB09E1E2FEA8E078AE0"/>
 		<table_extra>
 			<editor_table_info displayable_fields_count="3">
-				<color red="1" green="25" blue="147" alpha="255"/>
+				<color red="249" green="130" blue="127" alpha="255"/>
 				<coordinates left="362.37630208333" top="168.44401041667" width="166.45703125" height="120.01171875"/>
 			</editor_table_info>
 		</table_extra>
@@ -63,12 +63,12 @@
 		<primary_key field_name="ID" field_uuid="AC7CEEF0037E4C628395F967F7E2DB84"/>
 		<table_extra>
 			<editor_table_info displayable_fields_count="9">
-				<color red="1" green="25" blue="147" alpha="255"/>
+				<color red="249" green="130" blue="127" alpha="255"/>
 				<coordinates left="361.43229166667" top="300.50651041667" width="173.44921875" height="239.14453125"/>
 			</editor_table_info>
 		</table_extra>
 	</table>
-	<relation uuid="7EA54E2861B749289F197718006C7C0B" name_Nto1="activity" name_1toN="tasks" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1">
+	<relation uuid="7EA54E2861B749289F197718006C7C0B" name_Nto1="activity" name_1toN="tasks" state="1">
 		<related_field kind="source">
 			<field_ref uuid="A70548AC260F4FADA515C1E4C8D8EA91" name="ID_activity">
 				<table_ref uuid="6AEB7348F7C4480CBC473FB267054861" name="task"/>
@@ -85,7 +85,7 @@
 			</editor_relation_info>
 		</relation_extra>
 	</relation>
-	<relation uuid="833EB0DCE98041528AABADF20B0A8A38" name_Nto1="person" name_1toN="tasks" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1">
+	<relation uuid="833EB0DCE98041528AABADF20B0A8A38" name_Nto1="person" name_1toN="tasks" state="1">
 		<related_field kind="source">
 			<field_ref uuid="68473FD92E12459094A8D145958AAE94" name="ID_person">
 				<table_ref uuid="6AEB7348F7C4480CBC473FB267054861" name="task"/>

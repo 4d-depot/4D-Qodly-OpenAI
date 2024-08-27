@@ -79,7 +79,7 @@
 						"events": [
 							"onload"
 						],
-						"action": "refresh",
+						"action": "reset",
 						"datasource": {
 							"name": "settings",
 							"from": "",

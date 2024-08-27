@@ -138,7 +138,8 @@
 					"width": "100%",
 					"minWidth": "1px",
 					"height": "100%"
-				}
+				},
+				"iterableChild": true
 			},
 			"displayName": "Stylebox",
 			"custom": {},
@@ -164,7 +165,8 @@
 					"height": "fit-content",
 					"minHeight": "fit-content",
 					"gap": "12px"
-				}
+				},
+				"iterableChild": true
 			},
 			"displayName": "Stylebox",
 			"custom": {},
@@ -187,7 +189,8 @@
 				"style": {
 					"display": "flex",
 					"gap": "20px"
-				}
+				},
+				"iterableChild": true
 			},
 			"displayName": "Stylebox",
 			"custom": {},
@@ -208,7 +211,8 @@
 				"events": [],
 				"style": {
 					"width": "auto"
-				}
+				},
+				"iterableChild": true
 			},
 			"displayName": "Stylebox",
 			"custom": {},
@@ -260,7 +264,8 @@
 					"flexDirection": "column",
 					"justifyContent": "flex-start",
 					"alignItems": "start"
-				}
+				},
+				"iterableChild": true
 			},
 			"displayName": "Stylebox",
 			"custom": {},
@@ -314,7 +319,8 @@
 				},
 				"classNames": [
 					"title"
-				]
+				],
+				"iterableChild": true
 			},
 			"displayName": "Text",
 			"custom": {},
@@ -342,7 +348,8 @@
 					"paddingBottom": "0px",
 					"marginBottom": "6px"
 				},
-				"classNames": []
+				"classNames": [],
+				"iterableChild": true
 			},
 			"displayName": "Stylebox",
 			"custom": {},
@@ -398,7 +405,8 @@
 					"marginRight": "0px",
 					"marginTop": "0px",
 					"marginLeft": "0px"
-				}
+				},
+				"iterableChild": true
 			},
 			"displayName": "Text",
 			"custom": {},
@@ -450,7 +458,8 @@
 				"style": {
 					"marginLeft": "0px",
 					"marginTop": "0px"
-				}
+				},
+				"iterableChild": true
 			},
 			"displayName": "Text",
 			"custom": {},
@@ -474,7 +483,8 @@
 					"borderBottomWidth": "1px",
 					"display": "flex",
 					"flexDirection": "column"
-				}
+				},
+				"iterableChild": true
 			},
 			"displayName": "Stylebox",
 			"custom": {},
@@ -505,7 +515,8 @@
 					"minHeight": "fit-content",
 					"maxHeight": "fit-content",
 					"gap": "10px"
-				}
+				},
+				"iterableChild": true
 			},
 			"displayName": "Stylebox",
 			"custom": {},
@@ -631,7 +642,8 @@
 					"paddingRight": "1px",
 					"paddingBottom": "1px",
 					"paddingLeft": "1px"
-				}
+				},
+				"iterableChild": true
 			},
 			"displayName": "Stylebox",
 			"custom": {
@@ -714,7 +726,8 @@
 				"style": {
 					"fontSize": "12px",
 					"textAlign": "center"
-				}
+				},
+				"iterableChild": true
 			},
 			"displayName": "Text",
 			"custom": {},
@@ -744,7 +757,8 @@
 					"borderWidth": "1px",
 					"borderRadius": "20px"
 				},
-				"classNames": []
+				"classNames": [],
+				"iterableChild": true
 			},
 			"displayName": "Stylebox",
 			"custom": {},
@@ -803,7 +817,8 @@
 					"paddingBottom": "0px",
 					"paddingTop": "0px",
 					"marginTop": "0px"
-				}
+				},
+				"iterableChild": true
 			},
 			"displayName": "Stylebox",
 			"custom": {},
@@ -821,7 +836,8 @@
 			"isCanvas": true,
 			"props": {
 				"events": [],
-				"style": {}
+				"style": {},
+				"iterableChild": true
 			},
 			"displayName": "Stylebox",
 			"custom": {},
@@ -858,7 +874,8 @@
 				"style": {},
 				"classNames": [
 					"section"
-				]
+				],
+				"iterableChild": true
 			},
 			"displayName": "Text",
 			"custom": {},
@@ -902,7 +919,8 @@
 						]
 					}
 				],
-				"datasource": "manifest.description"
+				"datasource": "manifest.description",
+				"iterableChild": true
 			},
 			"displayName": "Text",
 			"custom": {},
@@ -928,7 +946,8 @@
 					"flexDirection": "column",
 					"height": "100%",
 					"gap": "12px"
-				}
+				},
+				"iterableChild": true
 			},
 			"displayName": "Stylebox",
 			"custom": {},
@@ -964,7 +983,8 @@
 				"datasource": "",
 				"style": {
 					"height": "fit-content"
-				}
+				},
+				"iterableChild": true
 			},
 			"displayName": "Text",
 			"custom": {},
@@ -1004,7 +1024,8 @@
 					"width": "fit-content",
 					"marginTop": "0px",
 					"height": "fit-content"
-				}
+				},
+				"iterableChild": true
 			},
 			"displayName": "Stylebox",
 			"custom": {},
@@ -1045,7 +1066,8 @@
 					"marginRight": "0px",
 					"marginBottom": "0px",
 					"marginLeft": "12px"
-				}
+				},
+				"iterableChild": true
 			},
 			"displayName": "Text",
 			"custom": {},
